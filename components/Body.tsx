@@ -7,7 +7,7 @@ type BodyProps = {
 export const Body = ({ children }: BodyProps) => {
   return (
     <div class="flex w-full justify-center">
-      <div class="px-124 w-full max-w-[1440px]">
+      <div class="px-32 md:px-124 w-full max-w-[1440px]">
         {children}
       </div>
     </div>

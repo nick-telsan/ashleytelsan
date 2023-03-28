@@ -27,7 +27,10 @@ export default function Home() {
           </div>
 
           <div class="flex flex-wrap pt-[84px] gap-[134px]">
-            <div class="w-full max-w-[480px] flex items-center">
+            <div class="md:order-2">
+              <ImageCircle color="eggplant-100" />
+            </div>
+            <div class="w-full max-w-[480px] flex items-center md:order-1">
               <div class="flex flex-col gap-16">
                 <h2 class="text-36 font-bold">Project Title</h2>
                 <p>
@@ -38,7 +41,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <ImageCircle color="eggplant-100" />
           </div>
 
           <div class="flex flex-wrap pt-[84px] gap-[134px]">

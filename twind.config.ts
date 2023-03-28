@@ -4,9 +4,6 @@ export default {
   selfURL: import.meta.url,
   preflight: (preflight, { theme }) => ({
     ...preflight,
-    html: {
-      height: "100%",
-    },
     body: {
       fontFamily: "'Open Sans', sans-serif",
       backgroundColor: theme("colors.gray.100"),
@@ -15,6 +12,7 @@ export default {
   theme: {
     boxShadow: {
       "inset-25": "inset 0px -6px 10px rgba(0, 0, 0, 0.25)",
+      "25": "0px 6px 10px rgba(0, 0, 0, 0.25)",
     },
     colors: {
       green: {
@@ -37,10 +35,12 @@ export default {
     extend: {
       fontSize: {
         24: "1.5rem",
+        32: "2rem",
         36: "2.25rem",
       },
       spacing: {
         16: "1rem",
+        32: "2rem",
         38: "2.375rem",
         124: "7.75rem",
       },
