@@ -1,5 +1,6 @@
 import { MenuIcon } from 'modules/ui/icons';
 import { NavbarLink } from './navbar-link';
+import clsx from 'clsx';
 
 type NavbarMobileMenuTriggerProps = {
   onClick: () => void;
@@ -16,13 +17,19 @@ export const NavbarMobileMenuTrigger = ({
 };
 
 type NavbarMobileMenuProps = {
+  color: 'green' | 'eggplant';
   open: boolean;
 };
 
-export const NavbarMobileMenu = ({ open }: NavbarMobileMenuProps) => {
+export const NavbarMobileMenu = ({ color, open }: NavbarMobileMenuProps) => {
+  const classes = clsx(
+    'py-24 shadow-25',
+    color === 'green' ? 'bg-green-lighter' : 'bg-eggplant-lighter',
+  );
+
   if (open) {
     return (
-      <div className="bg-[#b4d4c3] py-24 shadow-25">
+      <div className={classes}>
         <ul className="flex flex-col items-center gap-24">
           <li>
             <NavbarLink href="/">Home</NavbarLink>

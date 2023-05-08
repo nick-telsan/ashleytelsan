@@ -4,10 +4,20 @@ import { NavbarLink } from './navbar-link';
 import { useEffect, useState } from 'react';
 import { NavbarMobileMenu, NavbarMobileMenuTrigger } from './navbar-menu';
 import { useRouter } from 'next/router';
+import clsx from 'clsx';
 
-export const Navbar = () => {
+type NavbarProps = {
+  color: 'green' | 'eggplant';
+};
+
+export const Navbar = ({ color }: NavbarProps) => {
   const router = useRouter();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const classes = clsx(
+    'flex h-90 w-full items-center justify-between px-32 shadow-25 md:px-64 lg:px-124',
+    color === 'green' ? 'bg-green-light' : 'bg-eggplant-light',
+  );
 
   const toggleMobileMenu = () => setMobileMenuOpen((previous) => !previous);
 
@@ -17,7 +27,7 @@ export const Navbar = () => {
 
   return (
     <nav>
-      <div className="flex h-90 w-full items-center justify-between bg-green-light px-32 shadow-25 md:px-64 lg:px-124">
+      <div className={classes}>
         <div className="flex items-center gap-24">
           <Link
             className="flex h-60 w-60 items-center justify-center rounded-full bg-white"
@@ -44,7 +54,7 @@ export const Navbar = () => {
           <NavbarMobileMenuTrigger onClick={toggleMobileMenu} />
         </div>
       </div>
-      <NavbarMobileMenu open={mobileMenuOpen} />
+      <NavbarMobileMenu color={color} open={mobileMenuOpen} />
     </nav>
   );
 };

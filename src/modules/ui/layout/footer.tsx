@@ -1,12 +1,22 @@
 import Link from 'next/link';
 import { LinkedInIcon } from '../icons';
 import { motion } from 'framer-motion';
+import clsx from 'clsx';
 
 const MotionLink = motion(Link);
 
-export const Footer = () => {
+type FooterProps = {
+  color: 'green' | 'eggplant';
+};
+
+export const Footer = ({ color }: FooterProps) => {
+  const classes = clsx(
+    'flex min-h-[90px] w-full shrink items-center justify-center px-124',
+    color === 'green' ? 'bg-green-light' : 'bg-eggplant-light',
+  );
+
   return (
-    <footer className="flex min-h-[90px] w-full shrink items-center justify-center bg-green-light px-124">
+    <footer className={classes}>
       <MotionLink
         whileHover={{ scale: 1.05 }}
         href="https://www.linkedin.com/in/ashley-telsan-351190229/"

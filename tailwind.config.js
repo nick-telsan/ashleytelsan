@@ -12,11 +12,13 @@ module.exports = {
     },
     colors: {
       green: {
+        lighter: '#b4d4c3',
         light: '#91B6A2',
         medium: '#56876D',
         dark: '#19381F',
       },
       eggplant: {
+        lighter: '#d3bdc8',
         light: '#B08FA0',
         medium: '#6F5060',
         dark: '#462A39',
