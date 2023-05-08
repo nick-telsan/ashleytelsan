@@ -1,6 +1,8 @@
 import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import '@fontsource/open-sans';
+import 'modules/styles/global.css';
 
 export type NextPageWithLayout<P = Record<string, unknown>, IP = P> = NextPage<
   P,

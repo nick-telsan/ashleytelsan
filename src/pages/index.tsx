@@ -1,5 +1,12 @@
+import { HomeScreen } from 'modules/home';
+import { Layout } from 'modules/ui/layout';
+
 const Root = () => {
-  return <div>Sup</div>;
+  return <HomeScreen />;
+};
+
+Root.getLayout = function getLayout(page: React.ReactElement) {
+  return <Layout>{page}</Layout>;
 };
 
 export default Root;
