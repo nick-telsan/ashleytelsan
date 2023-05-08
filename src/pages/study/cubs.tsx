@@ -1,11 +1,12 @@
+import { CubsScreen } from 'modules/studies/cubs';
 import { Layout } from 'modules/ui/layout';
 
-const About = () => {
-  return <div>CUBS</div>;
+const CubsPage = () => {
+  return <CubsScreen />;
 };
 
-About.getLayout = function getLayout(page: React.ReactElement) {
+CubsPage.getLayout = function getLayout(page: React.ReactElement) {
   return <Layout color="eggplant">{page}</Layout>;
 };
 
-export default About;
+export default CubsPage;

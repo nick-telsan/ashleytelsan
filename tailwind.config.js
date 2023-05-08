@@ -6,6 +6,10 @@ function pxToRem(value) {
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
+    borderRadius: {
+      full: '9999px',
+      25: pxToRem(25),
+    },
     boxShadow: {
       'inset-25': 'inset 0px -6px 10px rgba(0, 0, 0, 0.25)',
       25: '0px 6px 10px rgba(0, 0, 0, 0.25)',
@@ -38,15 +42,18 @@ module.exports = {
       1440: pxToRem(1440),
     },
     spacing: {
+      0: pxToRem(0),
       16: pxToRem(16),
       24: pxToRem(24),
       32: pxToRem(32),
       36: pxToRem(36),
       38: pxToRem(38),
+      48: pxToRem(48),
       60: pxToRem(60),
       64: pxToRem(64),
       72: pxToRem(72),
       90: pxToRem(90),
+      96: pxToRem(96),
       124: pxToRem(124),
     },
     textDecorationThickness: {

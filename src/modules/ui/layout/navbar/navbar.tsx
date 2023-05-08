@@ -40,7 +40,7 @@ export const Navbar = ({ color }: NavbarProps) => {
           </h2>
         </div>
         <div>
-          <ul className="hidden gap-24 sm:flex">
+          <ul className="hidden list-none gap-24 sm:flex">
             <li>
               <NavbarLink href="/">Home</NavbarLink>
             </li>

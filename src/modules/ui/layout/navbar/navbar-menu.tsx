@@ -30,7 +30,7 @@ export const NavbarMobileMenu = ({ color, open }: NavbarMobileMenuProps) => {
   if (open) {
     return (
       <div className={classes}>
-        <ul className="flex flex-col items-center gap-24">
+        <ul className="flex list-none flex-col items-center gap-24">
           <li>
             <NavbarLink href="/">Home</NavbarLink>
           </li>
