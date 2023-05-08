@@ -27,7 +27,7 @@ module.exports = {
         medium: '#6F5060',
         dark: '#462A39',
       },
-      white: '#FFFEF9',
+      white: '#f8f8f8',
       black: '#242529',
     },
     fontFamily: {
