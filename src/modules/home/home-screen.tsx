@@ -3,6 +3,7 @@ import { Hero } from './hero';
 import { Body } from 'modules/ui/body';
 import Image from 'next/image';
 import cubsPreview from './cubs-preview.png';
+import triCountyPreview from './tri-county-preview.png';
 import Link from 'next/link';
 
 export const HomeScreen = () => {
@@ -36,29 +37,33 @@ export const HomeScreen = () => {
             </div>
           </div>
 
-          {/* <div className="flex flex-wrap gap-[134px] pt-[84px]">
+          <div className="flex flex-wrap gap-[134px] pt-[84px]">
             <div className="md:order-2">
               <ImageCircle color="eggplant-light">
-                <Image
-                  src="/cubs-preview.png"
-                  alt="CUBS"
-                  width={671}
-                  height={1350}
-                />
+                <Link href="/study/tri-county">
+                  <Image
+                    src={triCountyPreview}
+                    alt="Tri County Appliance Repair"
+                  />
+                </Link>
               </ImageCircle>
             </div>
             <div className="flex w-full max-w-[480px] items-center md:order-1">
               <div className="flex flex-col gap-16">
-                <h2 className="text-36 font-bold">Project Title</h2>
+                <Link href="/study/cubs" className="text-36 font-bold">
+                  Tri-County Appliance Repair
+                </Link>
                 <p>
-                  Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  vulputate libero et velit interdum, ac aliquet odio mattis.
-                  className aptent taciti sociosqu ad litora torquent per
-                  conubia nostra, per inceptos himenaeos.
+                  A website designed to streamline the repair request process
+                  for customers while providing comprehensive information about
+                  the company. With a user-friendly interface and intuitive
+                  features, customers can easily submit repair requests online
+                  and access valuable information, making their experience
+                  seamless and efficient.
                 </p>
               </div>
             </div>
-          </div> */}
+          </div>
 
           {/* <div className="flex flex-wrap gap-[134px] pt-[84px]">
             <ImageCircle color="green-medium">
