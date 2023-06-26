@@ -72,6 +72,7 @@ export const AboutScreen = () => {
           id="resume"
           whileHover={{ scale: 1.05 }}
           className="my-32 flex h-[100px] w-[200px] items-center justify-center rounded-full bg-green-medium text-32 font-bold text-white sm:mb-72"
+          href="/resume.pdf"
         >
           Resume
         </motion.a>

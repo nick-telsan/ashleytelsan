@@ -7,7 +7,7 @@ import cubsPreview from 'core/cubs.png';
 export const TriCountyConclusion = () => {
   return (
     <>
-      <div className="w-full bg-eggplant-lighter px-124 pb-48">
+      <div className="w-full bg-eggplant-lighter pb-48">
         <Section heading="Final Thoughts">
           <p>
             In conclusion, the Tri County Appliance Repair website design
