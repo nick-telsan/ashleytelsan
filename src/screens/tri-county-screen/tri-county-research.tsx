@@ -29,25 +29,17 @@ export const TriCountyResearch = () => {
         </p>
       </Section>
 
-      <Section heading="User Surveys">
+      <Section heading="User Data">
         <p>
-          The goal of my user survey was to gain a deeper understanding of how
-          participants feel about the public bus system and the transportation
-          apps they currently use. The survey collected data on their
-          experiences, preferences, and suggestions for improvement in these
-          aspects. With the participation of 23 users, I was able to gather a
-          diverse range of perspectives and insights that have helped me
-          identify key areas for improvement. Analyzing this data, I can make
-          informed UX/UI design decisions that will enhance the user experience
-          for C.U.B.S.
-        </p>
-        <p>
-          The survey provided insights into both the demographics of
-          participants and the current issues they experience with public
-          transportation. I inquired about their opinions on public bus systems
-          and asked what changes they would make to the transportation apps they
-          currently use. I found three major issues across the majority of
-          participants.
+          To start of the research process, I conducted a survey of the local
+          population to collect statistics for the primary areas served by Tri
+          County Appliance Repair. These statistics were obtained by gathering
+          census data from the three main cities that the company serves and
+          calculating the median values across these cities. The purpose of
+          obtaining this information is to create a persona that will serve as a
+          valuable guide throughout the design process, that will provide
+          insights into the target audience&apos;s characteristics and
+          preferences.
         </p>
 
         <div className="flex w-full flex-wrap justify-evenly gap-16 py-48">

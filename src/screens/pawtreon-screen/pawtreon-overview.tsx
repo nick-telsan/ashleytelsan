@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-export const TriCountyOverview = () => {
+export const PawtreonOverview = () => {
   return (
     <div className="flex w-full flex-col items-center bg-eggplant-lighter px-32 py-48 md:px-124">
       <h2 className="text-center text-36 font-bold">Project Overview</h2>
@@ -9,8 +9,9 @@ export const TriCountyOverview = () => {
           <section className="flex flex-col gap-16">
             <h3 className="text-32 font-bold">Problem</h3>
             <p>
-              Tri County Appliance Repair currently does not have a website or
-              branding at the moment.
+              The existing donation process on local animal shelters&apos;
+              website were not very intuitive, resulting in a low conversion
+              rate.
             </p>
           </section>
 
@@ -18,22 +19,19 @@ export const TriCountyOverview = () => {
             <h3 className="text-32 font-bold">Objectives</h3>
             <ul className="list-inside list-disc">
               <li>
-                Create a responsive website that scales down well to a mobile
-                site
+                Create an app that allows users to donate to multiple shelters
               </li>
-              <li>Have a form that customers can request a repair online</li>
-              <li>
-                Ensure customers can access the relevant company information
-                that they made need
-              </li>
+              <li>Have rewards viewable from the web app</li>
+              <li>Allow users can manage subscriptions from the web app</li>
             </ul>
           </section>
 
           <section className="flex flex-col gap-16">
             <h3 className="text-32 font-bold">Solution</h3>
             <p>
-              Create a simple and straightforward website that is responsive and
-              accessible to their audience.
+              An application that allows donors to donate to multiple animal
+              shelters while offering rewards that could be customized by each
+              animal shelter.
             </p>
           </section>
         </div>
@@ -65,9 +63,9 @@ export const TriCountyOverview = () => {
         <motion.a
           className="my-32 flex h-100 w-fit items-center justify-center rounded-full bg-eggplant-medium px-32 text-32 font-bold text-white sm:mb-72"
           whileHover={{ scale: 1.05 }}
-          href="https://tricountyappliancerepair.webflow.io/"
+          href="https://www.figma.com/proto/8sjIGCi2yyvj8VOEDHGzWz/Pawtreon?page-id=325%3A3906&type=design&node-id=325-4412&viewport=268%2C-63%2C0.46&t=o1iByJE913XYu9c6-1&scaling=scale-down&starting-point-node-id=325%3A4412&mode=design"
         >
-          View Website
+          View Prototype
         </motion.a>
       </div>
     </div>
