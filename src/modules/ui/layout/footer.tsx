@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { LinkedInIcon } from '../icons';
+import { LinkedInIcon, MailIcon } from '../icons';
 import { motion } from 'framer-motion';
 import clsx from 'clsx';
 
@@ -11,18 +11,21 @@ type FooterProps = {
 
 export const Footer = ({ color }: FooterProps) => {
   const classes = clsx(
-    'flex min-h-[90px] w-full shrink items-center justify-center px-124',
+    'flex min-h-[90px] w-full shrink items-center justify-center gap-36 px-124',
     color === 'green' ? 'bg-green-light' : 'bg-eggplant-light',
   );
 
   return (
     <footer className={classes}>
-      <MotionLink
+      <motion.a
         whileHover={{ scale: 1.05 }}
         href="https://www.linkedin.com/in/ashley-telsan-351190229/"
       >
         <LinkedInIcon />
-      </MotionLink>
+      </motion.a>
+      <motion.a whileHover={{ scale: 1.05 }} href="mailto:me@ashleytelsan.com">
+        <MailIcon width={62} />
+      </motion.a>
     </footer>
   );
 };
