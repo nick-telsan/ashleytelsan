@@ -52,7 +52,7 @@ export const HomeScreen = () => {
             </div>
             <div className="flex w-full max-w-[480px] items-center md:order-1">
               <div className="flex flex-col gap-16">
-                <Link href="/study/cubs" className="text-36 font-bold">
+                <Link href="/study/tri-county" className="text-36 font-bold">
                   Tri-County Appliance Repair
                 </Link>
                 <p>
